@@ -22,6 +22,7 @@ public class DemoServiceImpl implements DemoService {
 	
 	public DemoServiceImpl(RestTemplate restTemplateConfig) {
 		this.restTemplate = restTemplateConfig;
+		
 	}
 
 	@Override
