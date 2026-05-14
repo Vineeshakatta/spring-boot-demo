@@ -15,3 +15,10 @@ CREATE TABLE student_teacher (
     CONSTRAINT fk_student FOREIGN KEY (student_id) REFERENCES student(id),
     CONSTRAINT fk_teacher FOREIGN KEY (teacher_id) REFERENCES teacher(id)
 );
+
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(50) NOT NULL
+);
